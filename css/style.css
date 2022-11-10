@@ -1,10 +1,12 @@
-/*
+  @font-face{
+  font-family:'century_bold';
+  src: url('../fonts/GOTHICB.TTF') format('truetype');
+  }
 
-Ultra Profile
-
-https://templatemo.com/tm-464-ultra-profile
-
-*/
+  @font-face{
+  font-family:'century';
+  src: url('../fonts/GOTHIC.TTF') format('truetype');
+  }
 
 body {
   background: #ffffff;
@@ -103,7 +105,8 @@ hr {
  }
 .tm-home-title { 
     font-size: 50px;
-    color: black;
+    color: white;
+    font-family: century;
  }
 .tm-home-subtitle {
   color: #506ee8;
