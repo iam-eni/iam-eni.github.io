@@ -1632,15 +1632,15 @@ $(document).ready(function(){
     });
     new TiltSlider( document.getElementById( 'slideshow' ) );  
 
-    // window.setInterval(function(){  
-    // 	autoplay:true,          
+    window.setInterval(function(){  
+    	// autoplay:true,          
 
-    //     if($('nav > .current').next().index() === '-1'){
-    //         $('nav > .span').eq(0).trigger('click');
-    //     }else{
-    //       $('nav>.current').next().trigger('click');
-    //       }               
-    // } , 1500);
+        if($('nav > .current').next().index() === '-1'){
+            $('nav > .span').eq(0).trigger('click');
+        }else{
+          $('nav>.current').next().trigger('click');
+          }               
+    } , 6000);
 
 })
 
