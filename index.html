@@ -27,6 +27,11 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
     <link rel="stylesheet" href="css/lightslider.css">
 	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
 
+		<!-- <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+
 
 		<link rel="shortcut icon" href="images/favicon.jpg">
 	    <link rel="icon" href="images/favicon.jpg">
@@ -448,7 +453,35 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
   }
 }
 
+
+.slideshow > nav span.current {
+    background-color: #636363;
+}
+
+.slideshow > nav span{
+	border-top: 10px solid #ddd;
+    border-bottom: 10px solid #ddd;
+    background-color: #9e9e9e;
+}
+
+@media screen and (max-width: 65.3125em){
+	.tiltview {
+	    left: 0;
+	    opacity: 0.75;
+	    pointer-events: none;
+	}
+}
+smally {
+    display: block;
+    font-size: 12px;
+    line-height: 1.5em;
+    position: absolute;
+    bottom: 43px;
+    background-color: #ffffff85;
+    padding: 4px;
+}
 </style>
+
 
 
 </head>
@@ -488,7 +521,7 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 					<li><a href="#home" class="smoothScroll">Home</a></li>
 					<li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
 					<li><a href="#resume" class="smoothScroll">Resume</a></li>
-					<li><a href="#speak" class="smoothScroll">Soft-tech</a></li>
+					<li><a href="#speak" class="smoothScroll">Soft Skills</a></li>
 					<li><a href="#about" class="smoothScroll">About</a></li>
 					<li><a href="#contact" class="smoothScroll">Contact</a></li>
 				</ul>
@@ -532,7 +565,7 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 					<ul class="thelist  hide-otherwise">
 						<a href="#portfolio" class="smoothScroll" ><li class=" animated fadeInLeft" style="animation-delay: 3.4s;"><i class="fa fa-circle"> </i> Portfolio</li></a><br>
 						<a href="#resume" class="smoothScroll" ><li class=" animated fadeInLeft" style="animation-delay: 3.6s;"><i class="fa fa-circle"> </i> Resume</li></a><br>
-						<a href="#speak" class="smoothScroll" ><li class=" animated fadeInLeft" style="animation-delay: 3.8s;"><i class="fa fa-circle"> </i> Soft-tech</li></a><br>
+						<a href="#speak" class="smoothScroll" ><li class=" animated fadeInLeft" style="animation-delay: 3.8s;"><i class="fa fa-circle"> </i> Soft Skills</li></a><br>
 						<a href="#about" class="smoothScroll" ><li class=" animated fadeInLeft" style="animation-delay: 4s;"><i class="fa fa-circle"> </i> About</li></a><br>
 						<!-- <a href="#work" class="smoothScroll" ><li>Graphics Designer </li></a> -->
 					</ul>
@@ -541,7 +574,7 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 					<ul class="thelist  show-otherwise">
 						<a href="#portfolio" class="smoothScroll" ><li class=" animated fadeInRight" style="animation-delay: 3.4s;"><i class="fa fa-circle"> </i> Portfolio</li></a><br>
 						<a href="#resume" class="smoothScroll" ><li class=" animated fadeInRight" style="animation-delay: 3.6s;"><i class="fa fa-circle"> </i> Resume</li></a><br>
-						<a href="#speak" class="smoothScroll" ><li class=" animated fadeInRight" style="animation-delay: 3.8s;"><i class="fa fa-circle"> </i> Soft-tech</li></a><br>
+						<a href="#speak" class="smoothScroll" ><li class=" animated fadeInRight" style="animation-delay: 3.8s;"><i class="fa fa-circle"> </i> Soft Skills</li></a><br>
 						<a href="#about" class="smoothScroll" ><li class=" animated fadeInRight" style="animation-delay: 4s;"><i class="fa fa-circle"> </i> About</li></a><br>
 						<!-- <a href="#work" class="smoothScroll" ><li>Graphics Designer </li></a> -->
 					</ul>
@@ -553,6 +586,42 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 	<!-- END HOME -->
 
 
+
+
+
+
+<section id="about" class="tm-padding-top-bottom-100">
+		<div class="container">
+			<div class="row">
+
+
+				<div class="col-md-6 col-sm-6">
+					<div class="">						
+						<h4 class="tm-red-text"><strong style="  text-transform: none; "> Summary:</strong></h4>
+					</div>
+						<p>Passionate designer with over 10 years of experience in graphics design, UI/UX design, and motion graphics and a solid background in Product Design, Data analysis and Visualization, Graphic Design, Web Design and Product Analytics. Looking for a good challenge within UI/UX Design, Visual Design, or Product Design space to utilise my design skills and enhance user experiences in mobile, tablet and web-based devices.<br>
+						</p>
+					
+					
+				</div>
+
+				
+				<div class="col-md-6 col-sm-6">
+					<div class="">
+						
+						<h4 class="tm-red-text"><strong style="  text-transform: none; "> .</strong></h4>
+					</div>
+						<p>
+						 Experienced with Figma, Adobe After effect, Adobe Premier Pro, Adobe Photoshop, Google Analytics, Power BI, Tableau, HTML5, CSS, PHP, JavaScript and Python. Proven track record of raising UX and UI scores and customer retention. I’m very passionate about creating relevant solutions and using data to solve complex design problems. 
+						 <br>
+						 I'm also experienced in Data Analysis and Visualization.
+						</p>
+					
+					
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 	<!-- START PORTFOLIO -->
@@ -578,10 +647,86 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 							<li><a href="#" class="opc-main-bg" data-filter=".ui-ux">UI/UX</a></li>
 							<li><a href="#" class="opc-main-bg" data-filter=".graphics">Graphics</a></li>
 							<li><a href="#" class="opc-main-bg" data-filter=".animation">Animations</a></li>
-							<li><a href="#" class="opc-main-bg" data-filter=".startup">Start Ups</a></li>
+							<!-- <li><a href="#" class="opc-main-bg" data-filter=".startup">Start Ups</a></li> -->
+							<li><a href="#" class="opc-main-bg" data-filter=".datavis">VIsualizations</a></li>
 						</ul>
 						<div class="iso-box-section">
 							<div class="iso-box-wrapper col4-iso-box">
+
+								<div class="iso-boxy animation col-md-4">
+									<div class="portfolio-thumb">
+										<video id="vid1" class="" poster="null" onplay="this.style.backgroundImage=''"  preload="none" playsinline loop onclick="if(this.playing) this.pause() ; else this.play();"  ondblclick="if(this.volume == 0) this.volume=1 ; else this.volume=0; " src="images/demo-video.mp4">
+
+						    				<source id="" src="images/demo-video.mp4" type="video/" style=" background: transparent; ">  Your browser does not support this video player.  
+						    			</video>
+										<div class="video-animation" base-img="images/demo-video" base-img-max="7" base-img-ext=".jpg"  style="width: 100%; background-image: url(images/demo-video1.jpg)">
+											<img src="images/demo-video1.jpg" class="fluid-img" alt="Demo Animation Video" style="opacity: 0;">
+											<p>
+												<span class="btn play" style=""><i class="fa fa-play pause" style=""></i></span>
+											</p>
+										</div>
+
+										<div class="portfolio-overlay">
+											<h3 class="portfolio-item-title">BizCard Explainer Video</h3>
+											<p>A simple video animation created by me</p>
+											<p>
+												<span class="btn play" style=""><i class="fa fa-play" style=""></i></span>
+											</p>
+										</div>
+
+									</div>
+								</div>
+
+
+								<div class="iso-boxy animation col-md-4">
+									<div class="portfolio-thumb">
+										<video id="vid1" class="" poster="null" onplay="this.style.backgroundImage=''"  preload="none" playsinline loop onclick="if(this.playing) this.pause() ; else this.play();"  ondblclick="if(this.volume == 0) this.volume=1 ; else this.volume=0; " src="images/raven.mp4">
+
+						    				<source id="" src="images/raven.mp4" type="video/" style=" background: transparent; ">  Your browser does not support this video player.  
+						    			</video>
+										<div class="video-animation" base-img="images/raven" base-img-max="7" base-img-ext=".jpg"  style="width: 100%; background-image: url(images/raven1.jpg)">
+											<img src="images/raven1.jpg" class="fluid-img" alt="3D Animation Video" style="opacity: 0;">
+											<p>
+												<span class="btn play" style=""><i class="fa fa-play pause" style=""></i></span>
+											</p>
+										</div>
+
+										<case style="">case study</case>
+										<div class="portfolio-overlay">
+											<h3 class="portfolio-item-title">Raven Lunch Video</h3>
+											<p>A 3D animated video, create by the team</p>
+											<p>
+												<span class="btn play" style=""><i class="fa fa-play" style=""></i></span><a href="case-recifa.html" class="btn" >View Case</a>
+											</p>
+										</div>
+
+									</div>
+								</div>
+
+
+								<div class="iso-boxy animation col-md-4">
+									<div class="portfolio-thumb">
+										<video id="vid1" class="" poster="null" onplay="this.style.backgroundImage=''"  preload="none" playsinline loop onclick="if(this.playing) this.pause() ; else this.play();"  ondblclick="if(this.volume == 0) this.volume=1 ; else this.volume=0; " src="images/demo-video.mp4">
+
+						    				<source id="" src="images/demo-video.mp4" type="video/" style=" background: transparent; ">  Your browser does not support this video player.  
+						    			</video>
+										<div class="video-animation" base-img="images/demo-video" base-img-max="7" base-img-ext=".jpg"  style="width: 100%; background-image: url(images/demo-video1.jpg)">
+											<img src="images/demo-video1.jpg" class="fluid-img" alt="Demo Animation Video" style="opacity: 0;">
+											<p>
+												<span class="btn play" style=""><i class="fa fa-play pause" style=""></i></span>
+											</p>
+										</div>
+
+										<div class="portfolio-overlay">
+											<h3 class="portfolio-item-title">BizCard Explainer Video</h3>
+											<p>A simple video animation created by me</p>
+											<p>
+												<span class="btn play" style=""><i class="fa fa-play" style=""></i></span>
+											</p>
+										</div>
+
+									</div>
+								</div>
 								<div class="iso-boxy webapp ui-ux col-md-4">
 									<div class="portfolio-thumb">
 										<img src="images/recifa.jpg" class="fluid-img" alt="Recifa">
@@ -606,29 +751,6 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 												<a href="case-bizcard.html" class="btn" >View Case</a><a href="https://www.unicus.live/getbizcard" target="_blank" class="btn" >See Product</a>
 											</p>
 										</div>
-									</div>
-								</div>
-								<div class="iso-boxy animation col-md-4">
-									<div class="portfolio-thumb">
-										<video id="vid1" class="" poster="null" onplay="this.style.backgroundImage=''"  preload="none" playsinline loop onclick="if(this.playing) this.pause() ; else this.play();"  ondblclick="if(this.volume == 0) this.volume=1 ; else this.volume=0; " src="images/demo-video.mp4">
-
-						    				<source id="" src="images/demo-video.mp4" type="video/" style=" background: transparent; ">  Your browser does not support this video player.  
-						    			</video>
-										<div class="video-animation" base-img="images/demo-video" base-img-max="7" base-img-ext=".jpg"  style="width: 100%; background-image: url(images/demo-video1.jpg)">
-											<img src="images/demo-video1.jpg" class="fluid-img" alt="Demo Animation Video" style="opacity: 0;">
-											<p>
-												<span class="btn play" style=""><i class="fa fa-play pause" style=""></i></span>
-											</p>
-										</div>
-
-										<div class="portfolio-overlay">
-											<h3 class="portfolio-item-title">BizCard Explainer Video</h3>
-											<p>A simple video animation created by me</p>
-											<p>
-												<span class="btn play" style=""><i class="fa fa-play" style=""></i></span>
-											</p>
-										</div>
-
 									</div>
 								</div>
 								<div class="iso-boxy graphics col-md-4">
@@ -774,7 +896,7 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 								<br>
 								<b class="resume-company " >Peak Solutions.</b>
 								<br>
-								<span class="resume-duration">Dec. 2019 - Present</span>
+								<span class="resume-duration">Feb 2022 - Nov. 2022</span>
 							</p>
 						</li>
 
@@ -782,11 +904,11 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 						<li class="resume-item nh">
 							<i class="fa fa-dot-circle-o" ></i>
 							<p>
-								<span class="tm-info-label resume-position" >Product Manager.</span>
+								<span class="tm-info-label resume-position" >Head of Design.</span>
 								<br>
 								<b class="resume-company " >Unicus Technologies.</b>
 								<br>
-								<span class="resume-duration">Aug. 2019 – Dec 2019.</span>
+								<span class="resume-duration">Aug 2020 – Dec Feb 2022.</span>
 							</p>
 						</li>
 
@@ -800,20 +922,20 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 								<br>
 								<b class="resume-company " >Unicus Technologies.</b>
 								<br>
-								<span class="resume-duration">Apr. 2018 – Feb 2022.</span>
+								<span class="resume-duration">Apr 2018 – Aug 2020.</span>
 							</p>
 						</li>
 
-						<li class="resume-item nh">
+<!-- 						<li class="resume-item nh">
 							<i class="fa fa-graduation-cap" ></i>
 							<p>
 								<span class="tm-info-label resume-position" >Co-founded <br>Unicus Technologies</span>
 								<br>
 								<span class="resume-duration">Apr. 2018</span>
 							</p>
-						</li>
+						</li> -->
 
-
+<!-- 
 						<li class="resume-item nh uix ">
 							<i class="fa fa-graduation-cap"  ></i>
 							<p>
@@ -835,7 +957,18 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 								<br>
 								<span class="resume-duration">2017</span>
 							</p>
-						</li>
+						</li> -->
+<!-- 
+						<li class="resume-item nh uix ">
+							<i class="fa fa-dot-circle-o"  ></i>
+							<P>
+								<span class="tm-info-label resume-position" style="">Multimedia Consultant.</span>
+								<br>
+								<b class="resume-company " > Glorious Fountain Ministries. </b>
+								<br>
+								<span class="resume-duration">Sept. 2012 – Present.</span>
+							</P>
+						</li> -->
 
     					<li class="resume-item nh uix ">
 							<i class="fa fa-dot-circle-o"  ></i>
@@ -844,20 +977,20 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 								<br>
 								<b class="resume-company " >Freelance.</b>
 								<br>
-								<span class="resume-duration">Aug. 2012 – Apr. 2018.</span>
+								<span class="resume-duration">Oct. 2016 – Apr. 2018.</span>
 							</p>	
 						</li>
 
-						<li class="resume-item nh uix ">
+<!-- 						<li class="resume-item nh uix ">
 							<i class="fa fa-dot-circle-o"  ></i>
 							<p>
-								<span class="tm-info-label resume-position" style="">Graphics Designer.</span>
+								<span class="tm-info-label resume-position" style="">Creative Director</span>
 								<br>
 								<b class="resume-company " >Mediax Multimedia Concepts.</b>
 								<br>
 								<span class="resume-duration">Aug 2012 - Apr 2018</span>
 							</p>
-						</li>
+						</li> -->
 
 						<li class="resume-item nh">
 							<i class="fa fa-dot-circle-o"  ></i>
@@ -866,7 +999,7 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 								<br>
 								<b class="resume-company " >Mediax Multimedia Concepts.</b>
 								<br>
-								<span class="resume-duration">Jun. 2014 – Oct. 2015.</span>
+								<span class="resume-duration">Jun. 2014 – Oct. 2016.</span>
 							</p>
 						</li>
 
@@ -875,7 +1008,7 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 						<li class="resume-item nh">
 							<i class="fa fa-dot-circle-o"  ></i>
 							<p>
-								<span class="tm-info-label resume-position" style="">Multimedia Designer <br> 
+								<span class="tm-info-label resume-position" style="">Graphics &amp; Motion Designer <br> 
 								Graphics Designer,   Cinematographer,   Video Editor &amp; Animator,   Lighting Technician &amp; Designer</span>
 								<br>
 								<b class="resume-company " >Mediax Multimedia Concepts.</b>
@@ -884,7 +1017,7 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 							</p>
 						</li>
 
-
+<!-- 
 						<li class="resume-item nh">
 							<i class="fa fa-graduation-cap" ></i>
 							<p>
@@ -894,20 +1027,20 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 							</p>
 						</li>
 
-
+ -->
 						<li class="resume-item nh uix">
 							<i class="fa fa-dot-circle-o"  ></i>
 							<p>
-								<span class="tm-info-label resume-position" style="">Computer Systems Engineer. <br>(NYSC Volunteer)</span>
+								<span class="tm-info-label resume-position" style="">IT Support  Engineer. <br></span>
 								<br>
 								<b class="resume-company " > Nigeria Army Engineers.<br>
 												Engineering Search And Disposal Regiment (ESADR),<br>
 												(National Youth Service Corp) </b>
-								<br>
+								<br> · Paramilitary Service<br>
 								<span class="resume-duration">Aug. 2010 – Jun. 2011.</span>
 							</p>
 						</li>
-
+<!-- 
 						<li class="resume-item nh uix ">
 							<i class="fa fa-dot-circle-o"  ></i>
 							<p>
@@ -918,21 +1051,10 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 								<br>
 								<span class="resume-duration">Aug. 2010 – Jun. 2011.</span>
 							</p>
-						</li>
+						</li> -->
     
 						
-						<li class="resume-item nh uix ">
-							<i class="fa fa-dot-circle-o"  ></i>
-							<P>
-								<span class="tm-info-label resume-position" style="">Multimedia Consultant.</span>
-								<br>
-								<b class="resume-company " > Glorious Fountain Ministries. </b>
-								<br>
-								<span class="resume-duration">Sept. 2012 – Present.</span>
-							</P>
-						</li>
-						
-						<li class="resume-item nh uix ">
+<!-- 						<li class="resume-item nh uix ">
 							<i class="fa fa-dot-circle-o"  ></i>
 							<P>
 								<span class="tm-info-label resume-position" style="">
@@ -942,7 +1064,7 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 								<br>
 								<span class="resume-duration">Nov. 2008 – Aug. 2012.</span>
 							</P>
-						</li>
+						</li> -->
 
 
 						<li class="resume-item nh uix ">
@@ -952,7 +1074,7 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 								<br>
 								<b class="resume-company " >University of Port Harcourt.</b>
 								<br>
-								<span class="resume-duration">2009</span>
+								<span class="resume-duration">2010</span>
 							</p>
 						</li>
 
@@ -962,9 +1084,8 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 							<p>
 								<span class="tm-info-label resume-position" style="">Instrumentation / Electrical Electronic <br> Engineer (Intern).</span>
 								<br>
-									<b class="resume-company " >ARCO PETROCHEMICAL ENGINEERING CO. LTD. <br>
-									(Industrial Training / Internship)</b>
-								<br>
+									<b class="resume-company " >ARCO PETROCHEMICAL ENGINEERING CO. LTD. </b> 
+								<br>· Internship<br>
 								<span class="resume-duration">Jan 2008 – Dec. 2008</span>
 							</p>
 						</li>
@@ -997,14 +1118,6 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 					<div class="progress tm-progress">
 						<div class="progress-bar1  wow animated grow-line" data-wow-offset="50" style="width: 75%;"></div>
 					</div>
-					<h4 class="tm-progress-label">PHP <small class="progress-percent-small">85%</small></h4>
-					<div class="progress tm-progress">
-						<div class="progress-bar1  wow animated grow-line" data-wow-offset="50" style="width: 85%;"></div>
-					</div>
-					<h4 class="tm-progress-label">Python <small class="progress-percent-small">70%</small></h4>
-					<div class="progress tm-progress">
-						<div class="progress-bar1  wow animated grow-line" data-wow-offset="50" style="width: 70%;"></div>
-					</div>
 					<h4 class="tm-progress-label">SQL, MySQL <small class="progress-percent-small">80%</small></h4>
 					<div class="progress tm-progress">
 						<div class="progress-bar1  wow animated grow-line" data-wow-offset="50" style="width: 80%;"></div>
@@ -1013,17 +1126,25 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 					<div class="progress tm-progress">
 						<div class="progress-bar1  wow animated grow-line" data-wow-offset="50" style="width: 65%;"></div>
 					</div>
+					<h4 class="tm-progress-label">Power BI <small class="progress-percent-small">80%</small></h4>
+					<div class="progress tm-progress">
+						<div class="progress-bar1  wow animated grow-line" data-wow-offset="50" style="width: 90%;"></div>
+					</div>
+					<h4 class="tm-progress-label">Tableau <small class="progress-percent-small">70%</small></h4>
+					<div class="progress tm-progress">
+						<div class="progress-bar1  wow animated grow-line" data-wow-offset="50" style="width: 70%;"></div>
+					</div>
 				</div>
 
 
 				<div class="col-md-6 col-sm-6">
-					<h4 class="tm-progress-label">Data Science <small class="progress-percent-small">60%</small></h4>
+					<h4 class="tm-progress-label">Data Visualization <small class="progress-percent-small">90%</small></h4>
 					<div class="progress tm-progress">
-						<div class="progress-bar1  wow animated grow-line" data-wow-offset="50" style="width: 60%;"></div>
+						<div class="progress-bar1  wow animated grow-line" data-wow-offset="50" style="width: 90%;"></div>
 					</div>
-					<h4 class="tm-progress-label">Machine Learning <small class="progress-percent-small">60%</small></h4>
+					<h4 class="tm-progress-label">Presentation <small class="progress-percent-small">90%</small></h4>
 					<div class="progress tm-progress">
-						<div class="progress-bar1  wow animated grow-line" data-wow-offset="50" style="width: 60%;"></div>
+						<div class="progress-bar1  wow animated grow-line" data-wow-offset="50" style="width: 90%;"></div>
 					</div>
 					<h4 class="tm-progress-label">Digital Marketing (SEO, SEM...) <small class="progress-percent-small">80%</small></h4>
 					<div class="progress tm-progress">
@@ -1064,14 +1185,102 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 
 
 	<!-- START ABOUT -->
-	<section id="speak" class="tm-about nh" style="padding: 0; min-height: 100vh;">
+	<section id="speak" class="tm-about nh" style="/*padding: 0;*/min-height: 90vh;padding:0;background: #dddddd;background-image: none;">
+
+
+
+		
 		<div class="container">
+			<div class="slideshow" id="slideshow" style="margin: 0;">
+				<ol class="slides" style="height: 90vh;">
+					<li class="current">
+						<smally>* Presenting to Nigerian Government Niger Delta Development Board
+							<br>* Leading on the Peek Solutions America-on-board Designs 
+						</smally>
+						<div class="description">
+							<h2>Leadership Skills</h2>
+							<p>I have lead, inspire and guide others. I quickly take responsibility and ownership of projects</p>
+						</div>
+						<div class="tiltview col">
+							<a href=""><img src="img/lead.jpg"/></a>
+							<a href=""><img src="img/lead2.jpg"/></a>
+						</div>
+					</li>
+					<li>
+						<smally>* Communicating an idea at TEDx 
+						</smally>
+						<div class="description">
+							<h2>Communications Skills</h2>
+							<p>I'm able to effectively convey information and ideas in writing and speech.</p>
+						</div>
+						<div class="tiltview row">
+							<a href=""><img src="img/comm.jpg"/></a>
+							<a href=""><img src="img/comm2.jpg"/></a>
+						</div>
+					</li>
+					<li>
+						<smally>* Working with various teams at Unicus  
+						</smally>
+						<div class="description">
+							<h2>Teamwork</h2>
+							<p>I am able to perform well in a group or team of talented individuals.</p>
+						</div>
+						<div class="tiltview col">
+							<a href=""><img src="img/team.jpg"/></a>
+							<a href=""><img src="img/team2.jpg"/></a>
+						</div>
+					</li>
+					<li>
+						<smally>* App development brain-storming groups at Unicus   
+							<br>* Strategic planning session at Mediax 
+						</smally>
+						<div class="description">
+							<h2>Problem-solving</h2>
+							<p>I easily identify and resolve problems.</p>
+						</div>
+						<div class="tiltview row">
+							<a href=""><img src="img/pro.jpg"/></a>
+							<a href=""><img src="img/pro2.jpg"/></a>
+						</div>
+					</li>
+					<li>
+						<smally>* With the legal and financial dept. leads 
+							<br>* Great relationship with colleagues within and outside the office 
+						</smally>
+						<div class="description"> 
+							<h2>Interpersonal skills</h2>
+							<p>being able to build and maintain relationships.</p>
+						</div>
+						<div class="tiltview col">
+							<a href=""><img src="img/int.jpg"/></a>
+							<a href=""><img src="img/int2.jpg"/></a>
+						</div>
+					</li>
+					<li>
+						<smally>* Emotionally stable and self confident 
+							<br>* Tackling heated and emotional issues within my team 
+						</smally>
+						<div class="description">
+							<h2>Emotional intelligence</h2>
+							<p>being able to recognize and manage one's own emotions and the emotions of others.</p>
+						</div>
+						<div class="tiltview row">
+							<a href=""><img src="img/emo.jpg"/></a>
+							<a href=""><img src="img/emo2.jpg"/></a>
+						</div>
+					</li>
+				</ol>
+			</div>
+			
+		</div>
+
+
+
+
+<!-- 		<div class="container">
 			<div class="row">
 				<div class="col-md-6" style="color: white; background: rgb(0 0 0 / 65%); min-height: 100vh;padding: 40px 20px;">
 
-					<div id="draggable" class="dragme" style="height: 100px; width: 100px; position: absolute;">
-						
-					</div>
 
 						<p style=" font-style: italic;  font-size: 1.2em; line-height: 1.2em; text-align: left; ">
 							<br><br>
@@ -1092,16 +1301,16 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 					
 					
 						
-						<!-- <p style="  text-decoration: underline; ">Philosophy</p> -->
-						<div class="title" style=" padding: 0;">						
+						<p style="  text-decoration: underline; ">Philosophy</p>
+	<div class="title" style=" padding: 0;">						
 							<h3 class="tm-red-text" style=" text-transform: none; color: white; color: #1dde8e; font-weight: bold; ">Seize <br> every opportunity to 
 								<strong style=" font-size: 3.1em; display: block; color: #1dde8e; color: white; font-weight: normal; line-height: 0.9em; ">Learn</strong>
 								<strong style="  font-size: 3.1em;  display: block;  color: #1dde8e;  color: white; font-weight: bold; ">&amp; GRO<img class="wow  sprout-grow" src="images/sprout.png" style="height: 1.3em; position: absolute; margin-left: -1.1em; margin-top: -0.6em; visibility: visible; animation-name: grow-sprout;">W</strong>
 							</h3>
-						</div>
+						</div> -->
 						<!-- <br> -->
 					<!-- <p style="  text-decoration: underline; ">Mission</p> -->
-					<p>I provide keynotes, consulting, and virtual solutions to ensure your organization/community has the right mindset, behavior, and tools that inspire continous development through continous learning.</p><br>
+					<!-- <p>I provide keynotes, consulting, and virtual solutions to ensure your organization/community has the right mindset, behavior, and tools that inspire continous development through continous learning.</p><br> -->
 
 					
 
@@ -1124,10 +1333,10 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 				<div class="col-md-6 col-sm-6">					
 					<h4 class="title"><strong>About </strong> Me </h4>
 					<p><span class="tm-info-label">Name</span> F. Eni</p>
-					<p><span class="tm-info-label">Gender</span> <unbiased>Withheld</unbiased> < December 23</p>
+					<!-- <p><span class="tm-info-label">Gender</span> <unbiased>Withheld</unbiased> < December 23</p> -->
 					<p><span class="tm-info-label">Address</span> Dartford, Kent. United Kingdom.</p>
-					<p><span class="tm-info-label">Email</span> <a href="mailto:fejiro@unicus.live" class="tm-red-text">fejiro.eni@gmail.com</a></p>
-					<p><span class="tm-info-label">Company Website</span> <a href="https://iam-eni.github.io" class="tm-red-text">iam-eni.github.io</a></p>
+					<p><span class="tm-info-label">Email</span> <a target="_blank" href="mailto:meet.iam.eni@gmail.com" class="tm-red-text">meet.iam.eni@gmail.com</a></p>
+					<p><span class="tm-info-label">LinkedIn</span> <a target="_blank" href="https://www.linkedin.com/in/iam-eni/" class="tm-red-text">in/iam-eni</a></p>
 					<br><br>
 				</div>
 
@@ -1135,11 +1344,10 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 				
 				<div class="col-md-6 col-sm-6">
 					<div class="title">
-						
+
 						<h1 class="tm-red-text">ME -<strong style="  text-transform: none; "> Simplified</strong></h1>
 					</div>
-						<p>Each day, I aspire to be a better version of myself than the day before, I realize I still have a long way to go, and I'm very ready to learn my way there.<br> My greatest knowledge is the fact that no knowledge is carved in stones. Knowledge in itself is bound to evolve, and I'm ready to evolve to understand it.<br> Finally, here is one of my quotes I think you would find inspiring...<br><br> 
-							<i style=" font-weight: normal; ">" The Lion that comes in first place in a rat race would only be called the fastest rat. But a rat that dies in a pride fight would be seen to have the heart of a lion. "</i><br>- Fejiro Eni (2012)
+						<p>I am an ambitious individual with a passion for technology and a desire to continuously improve my skills. I have a strong background in many form of designing, and I am well-versed in most design software tools. In addition to my technical abilities, I possess strong soft skills such as effective communication, problem-solving, and adaptability. I am a team player and have experience in leading projects and mentoring junior team members. I am committed to staying current with the latest industry trends and am always seeking out new learning opportunities. I am confident that my skills and experience make me a valuable asset to any team, and I am excited to take on new challenges in my next role.
 						</p>
 					
 					
@@ -1197,6 +1405,10 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */
 	<script src="js/wow.min.js"></script>
 	<script src="js/lightslider.min.js" ></script>
 
+		<script src="js/classie.js"></script>
+		<script src="js/tiltSlider.js"></script>
+
+
 <script type="text/javascript">
 
 
@@ -1237,9 +1449,21 @@ $(document).ready(function(){
 
 
     });
+    new TiltSlider( document.getElementById( 'slideshow' ) );  
 
+    // window.setInterval(function(){  
+    // 	autoplay:true,          
+
+    //     if($('nav > .current').next().index() === '-1'){
+    //         $('nav > .span').eq(0).trigger('click');
+    //     }else{
+    //       $('nav>.current').next().trigger('click');
+    //       }               
+    // } , 1500);
 
 })
+
+
 
 
 videoimg=1;
@@ -1278,52 +1502,60 @@ $(".play").click(function(){
 
 
 
-function startDrag(e) {
-				// determine event object
-				if (!e) {
-					var e = window.event;
-				}
 
-				// IE uses srcElement, others use target
-				var targ = e.target ? e.target : e.srcElement;
 
-				if (targ.className != 'dragme') {return};
-				// calculate event X, Y coordinates
-					offsetX = e.clientX;
-					offsetY = e.clientY;
+// function startDrag(e) {
+// 				// determine event object
+// 				if (!e) {
+// 					var e = window.event;
+// 				}
 
-				// assign default values for top and left properties
-				if(!targ.style.left) { targ.style.left='0px'};
-				if (!targ.style.top) { targ.style.top='0px'};
+// 				// IE uses srcElement, others use target
+// 				var targ = e.target ? e.target : e.srcElement;
 
-				// calculate integer values for top and left 
-				// properties
-				coordX = parseInt(targ.style.left);
-				coordY = parseInt(targ.style.top);
-				drag = true;
+// 				if (targ.className != 'dragme') {return};
+// 				// calculate event X, Y coordinates
+// 					offsetX = e.clientX;
+// 					offsetY = e.clientY;
 
-				// move div element
-					document.onmousemove=dragDiv;
+// 				// assign default values for top and left properties
+// 				if(!targ.style.left) { targ.style.left='0px'};
+// 				if (!targ.style.top) { targ.style.top='0px'};
+
+// 				// calculate integer values for top and left 
+// 				// properties
+// 				coordX = parseInt(targ.style.left);
+// 				coordY = parseInt(targ.style.top);
+// 				drag = true;
+
+// 				// move div element
+// 					document.onmousemove=dragDiv;
 				
-			}
-			function dragDiv(e) {
-				if (!drag) {return};
-				if (!e) { var e= window.event};
-				var targ=e.target?e.target:e.srcElement;
-				// move div element
-				targ.style.left=coordX+e.clientX-offsetX+'px';
-				targ.style.top=coordY+e.clientY-offsetY+'px';
-				return false;
-			}
-			function stopDrag() {
-				drag=false;
-			}
-			window.onload = function() {
-				document.onmousedown = startDrag;
-				document.onmouseup = stopDrag;
-			}
+// 			}
+// 			function dragDiv(e) {
+// 				if (!drag) {return};
+// 				if (!e) { var e= window.event};
+// 				var targ=e.target?e.target:e.srcElement;
+// 				// move div element
+// 				targ.style.left=coordX+e.clientX-offsetX+'px';
+// 				targ.style.top=coordY+e.clientY-offsetY+'px';
+// 				return false;
+// 			}
+// 			function stopDrag() {
+// 				drag=false;
+// 			}
+// 			window.onload = function() {
+// 				document.onmousedown = startDrag;
+// 				document.onmouseup = stopDrag;
+// 				document.ontouchstart = startDrag;
+// 				document.ontouchend = stopDrag;
+// 			}
 
 </script>
+<!-- 					<div id="draggable" class="dragme" style="height: 100px; width: 100px; position: absolute;">
+						
+					</div> -->
 
+					
 </body>
 </html>
