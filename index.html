@@ -26,6 +26,7 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */*/
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightslider.css">
 	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://www.unicus.live/css/stew.css">
 
 		<!-- <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
@@ -480,17 +481,32 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */*/
 smally {
     display: block;
     font-size: 12px;
-    line-height: 1.5em;
-    position: absolute;
-    bottom: 43px;
-    background-color: #ffffff85;
+    line-height: 14px;
     padding: 4px;
+    min-width: 214px;
+    font-style: italic;
 }
 
 
 .tm-home-title, .tm-home-subtitle{
 	color: black;
 }
+
+#sample{
+	display: flex;
+}
+
+#sample > img{
+    height: 100px;
+    margin: 4px;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+.fa-star, .fa-star-half-o, .fa-star-half{
+	color:gold;
+}
+
 </style>
 
 
@@ -1422,35 +1438,73 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);  */
 			<br>
 			<div class="row" style="padding-left: 15px;padding-top: 20px;min-height: 80vh;display: flex;align-items: flex-end;" >
 				
-				<div class="col-md-6" style="position: absolute;">
-					<div style=" padding-right: 50%; border-bottom: 1px solid #a7a7a7; ">
-						<b>Leadership Skills</b><br>
-						<p style=" font-size: 12px; line-height: 14px; display: inline-block;margin: 0; ">Leading, inspiring &amp; guiding others, I quickly take responsibility and ownership of projects</p>
+				<div class="col-md-6" style="position: absolute;max-height: 80vh; overflow: auto;">
+					<div class="hascaution" style=" padding-right: 50%; border-bottom: 1px solid #a7a7a7; cursor: pointer; ">
+						<b>Leadership Skills</b>
+						<br>
+						<caution>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-half"></i>
+						</caution>
+						<p style=" font-size: 12px; line-height: 14px; display: inline-block;margin: 0; ">I take responsibility and ownership of projects, inspiring and guiding others towards success.</p>
+						<caution>
+							<div id="sample" >
+								<img src="img/lead.jpg">
+								<img src="img/lead2.jpg">
+							</div>
+							<smally>
+								- Presenting to The Niger Delta Development Board
+								<br>
+								- Leading on the Peek Solutions America-on-board Designs 
+							</smally>
+						</caution>
+						
 					</div><br>	
 
-					<div style=" padding-right: 50%; border-bottom: 1px solid #a7a7a7; ">
-						<b>Communications Skills</b><br>
-						<p style=" font-size: 12px; line-height: 14px; display: inline-block;margin: 0; ">I'm able to effectively convey information and ideas in writing and speech.</p>
+					<div class="hascaution" style=" padding-right: 50%; border-bottom: 1px solid #a7a7a7; cursor: pointer; ">
+						<b>Communication Skills</b><br>
+						<caution>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-half"></i>
+						</caution>
+						<p style=" font-size: 12px; line-height: 14px; display: inline-block;margin: 0; ">I convey information and ideas effectively in both writing and speech.</p>
+						<caution>
+							<div id="sample" >
+								<img src="img/comm.jpg">
+								<img src="img/comm2.jpg">
+							</div>
+							<smally>
+								- Presenting to The Niger Delta Development Board
+								<br>
+								- Leading on the Peek Solutions America-on-board Designs 
+							</smally>
+						</caution>	
+						
 					</div><br>		
 
-					<div style=" padding-right: 50%; border-bottom: 1px solid #a7a7a7; ">
+					<div style=" padding-right: 50%; border-bottom: 1px solid #a7a7a7; cursor: pointer; ">
 						<b>Teamwork</b><br>
-						<p style=" font-size: 12px; line-height: 14px; display: inline-block;margin: 0; ">I am able to perform well in a group or team of talented individuals.</p>
+						<p style=" font-size: 12px; line-height: 14px; display: inline-block;margin: 0; ">I excel in teams of talented individuals, contributing to a positive and productive environment.</p>
 					</div><br>	
 
-					<div style=" padding-right: 50%; border-bottom: 1px solid #a7a7a7; ">
+					<div style=" padding-right: 50%; border-bottom: 1px solid #a7a7a7; cursor: pointer; ">
 						<b>Problem-solving</b><br>
-						<p style=" font-size: 12px; line-height: 14px; display: inline-block; margin: 0; ">I easily identify and resolve problems.</p>
+						<p style=" font-size: 12px; line-height: 14px; display: inline-block; margin: 0; ">I quickly identify and resolve complex problems, using critical thinking and creativity.</p>
 					</div><br>	
 
-					<div style=" padding-right: 50%; border-bottom: 1px solid #a7a7a7; ">
+					<div style=" padding-right: 50%; border-bottom: 1px solid #a7a7a7; cursor: pointer; ">
 						<b>Interpersonal skills</b><br>
-						<p style=" font-size: 12px; line-height: 14px; display: inline-block;margin: 0; ">being able to build and maintain relationships.</p>
+						<p style=" font-size: 12px; line-height: 14px; display: inline-block;margin: 0; ">I build and maintain strong relationships with colleagues, fostering collaboration and mutual respect.</p>
 					</div><br>
 
-					<div style=" padding-right: 50%; border-bottom: 1px solid #a7a7a7; ">
+					<div style=" padding-right: 50%; border-bottom: 1px solid #a7a7a7; cursor: pointer; ">
 						<b>Emotional intelligence</b><br>
-						<p style=" font-size: 12px; line-height: 14px; display: inline-block;margin: 0; ">being able to recognize and manage one's own emotions and the emotions of others.</p>
+						<p style=" font-size: 12px; line-height: 14px; display: inline-block;margin: 0; ">I recognize and manage my own emotions and those of others, creating a positive and empathetic workplace culture.</p>
 					</div>	
 
 				</div>
@@ -1467,7 +1521,7 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);  */
 		</div>
 
 
-		
+	<!-- 	
 		<div class="container" style="display: none;">
 			<div class="slideshow" id="slideshow" style="margin: 0;">
 				<ol class="slides" style="height: 90vh;">
@@ -1552,7 +1606,7 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);  */
 			
 		</div>
 
-
+ -->
 
 
 <!-- 		<div class="container">
@@ -1625,7 +1679,7 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);  */
 
 						<h1 class="tm-red-text">ME -<strong style="  text-transform: none; "> Simplified</strong></h1>
 					</div>
-						<p>I am an ambitious individual with a passion for technology and a desire to continuously improve my skills. I have a strong background in many form of designing, and I am well-versed in most design software tools. In addition to my technical abilities, I possess strong soft skills such as effective communication, problem-solving, and adaptability. I am a team player and have experience in leading projects and mentoring junior team members. I am committed to staying current with the latest industry trends and am always seeking out new learning opportunities. I am confident that my skills and experience make me a valuable asset to any team, and I am excited to take on new challenges in my next role.
+						<p>I am an ambitious individual with a passion for technology and a desire to continuously improve my skills. I have a strong background in many forms of design and I am well-versed in most design software tools. In addition to my technical abilities, I possess strong soft skills such as effective communication, problem-solving, and adaptability. I am a team player and have experience in leading projects and mentoring junior team members. I am committed to staying current with the latest industry trends and always seeking out new learning opportunities. I am confident that my skills and experience make me a valuable asset to any team, and I am excited to take on new challenges in my next role.
 						</p>
 					
 					
@@ -1667,7 +1721,7 @@ background: linear-gradient(304deg, #5A595C 0, #18171C 100%);  */
 		
 				<div class="col-md-1 col-sm-1"></div>
 				<div class="col-md-12 col-sm-12" style=" font-size: 14px; font-weight: bold; ">
-					<p style=" line-height: 19px; font-size: 14px; font-weight: 400; padding: 10px; padding-top: 20px; margin: 0; ">Copyright © <script>document.write(new Date().getFullYear())</script> Fejiro Eni<br> Designer: Fejiro Eni</p>
+					<p style=" line-height: 19px; font-size: 14px; font-weight: 400; padding: 10px; padding-top: 20px; margin: 0; ">Copyright © <script>document.write(new Date().getFullYear())</script> F.Eni<br> Designer: F.Eni</p>
 				</div>
 			</div>
 		</div>
@@ -1700,7 +1754,7 @@ var focus = url.searchParams.get("focus");
 $('#'+focus+'').trigger('click');
 
     y="1%";
-    x=parseInt($( document ).width() / 300);
+    x=parseInt($( document ).width() / 500);
 
     if (x<1)x=1;
     if(x<3){
