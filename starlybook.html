@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en" style="
+background: rgb(255 255 255);
+/*background: rgb(46 45 50);
+background: -moz-linear-gradient(304deg, #5A595C 0, #18171C 100%);
+background: -webkit-gradient(linear, 304deg, color-stop(0, 5A595C), color-stop(100%, 18171C));
+background: -webkit-linear-gradient(304deg, #5A595C 0, #18171C 100%);
+background: -o-linear-gradient(304deg, #5A595C 0, #18171C 100%);
+background: -ms-linear-gradient(304deg, #5A595C 0, #18171C 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1301FE', endColorstr='#F4F60C', GradientType='1'); 
+background: linear-gradient(304deg, #5A595C 0, #18171C 100%);/* W3C */*/
+">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<!-- SITE TITLE -->
+	<title>Eni's Personal Profile</title>
+
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightslider.css">
+	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://www.unicus.live/css/stew.css">
+
+		<!-- <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+
+
+		<link rel="shortcut icon" href="images/favicon.png">
+	    <link rel="icon" href="images/favicon.png">
+
+	    <meta property="og:image:width" content="1280" />
+	    <meta property="og:image:height" content="720" /> 
+
+        <meta property="og:url" content="https://iam-eni.github.io" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Eni's Personal Profile" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" itemprop="image" content="https://iam-eni.github.io/images/home-bg-og.jpg" />
+        <meta property="og:image:secure_url" itemprop="image" content="https://iam-eni.github.io/images/home-bg-og.jpg" /> 
+
+
+
+
+<!-- tweeter  -->
+        <meta name="twitter:url" content="https://iam-eni.github.io" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Eni's Personal Profile" />
+        <meta name="twitter:description" content="" />
+        <meta name="twitter:image" content="https://iam-eni.github.io/images/home-bg-og.jpg" /> 
+
+
+<!-- colors  -->
+		<meta name="theme-color" content="#ffffff" />
+
+<style type="text/css">
+
+	#home{
+		overflow: hidden;
+	}
+	
+	.head-cont {
+	    max-width: 270px;
+	    background: transparent;
+	    /* border-radius: 5px; */
+	    /* border-left: 1px solid #d8d9d4; */
+	    /* float: right; */
+	    /* margin-bottom: -10px; */
+	    transition: .6s;
+	    /* box-shadow: 0 0 9px grey; */
+	    position: absolute;
+	    right: 0; 
+	    bottom: 0;
+	    height: 100vh;
+	    margin: 0;
+	    padding-top: 2vh;
+	}
+
+
+	.head-cont *{
+		/*color: white;*/
+		/*font-weight: 600;*/
+		text-transform: none;
+		text-align: right;
+	}
+
+	.tm-home-subtitle{
+		margin: 0;
+    	font-size: 20px;
+    	font-weight: 700;
+	}
+
+	.thelist{
+	    padding: 0 ;
+	    padding-bottom: 20px;
+	}
+
+	.thelist li {
+	    margin: 5px 0;
+	    list-style: none;
+	    display: inline-block;
+	    color: #000000;
+	    font-weight: 600;
+	    border: 1px solid;
+	    padding: 5px 16px;
+	    border-radius: 3em;
+	    background-color: #ffffff5c;
+	}
+
+	.thelist a{
+		/*display: block;*/
+	}
+
+	a{
+		cursor: pointer;
+	}
+
+	.thelist a li .fa{
+		/*list-style: disc;*/
+		font-size: .2em;
+		color: #ffad37;
+		transition: .2s;
+		display: inline-block;
+		top: -0.6em;
+    	position: relative;
+    	display: none;
+	}
+
+	.thelist a:hover li .fa{
+		/*list-style: disc;*/
+		font-size: .4em;
+	}
+
+
+	a:hover{	
+		text-decoration: none !important;
+	}
+
+	section{
+		background-color: white; 
+	}
+
+	.hide-otherwise{
+		display: none;
+	}
+
+	.show-otherwise{
+		display: block
+	}
+
+	.head-cont h2 seperator{
+		color: black;
+		font-size: 1.2em;
+	}
+
+	.head-cont h2 *{
+		display: inline-block;
+	}
+
+	.iso-boxy {
+	    position: relative;
+	    min-height: 50px;
+	    /*float: left;*/
+	    overflow: hidden;
+	    margin:0;
+	    padding:0;
+	}
+
+	.filter-wrapper li {
+	    display: inline-block;
+	    margin: 0;
+	}
+
+	case{
+	    float: right;
+	    margin-top: -32px;
+	    /*background-color: #2196f3;*/
+	    background-color: red;
+	    position: absolute;
+	    color: white;
+	    padding: 5px;
+	    font-weight: bold;
+	    right: 1px;
+	}
+
+	.m-t-20{
+		/*margin-top: 20px;*/
+	}
+
+
+
+	.resume-section{
+	    text-transform: uppercase;
+	    letter-spacing: 0px;
+	    color: #0d60f9;
+	    /*margin-bottom: 30px;*/
+	}
+
+	.resume-company{
+	    color: #607d8b;
+	    /*margin: 10px 0;*/
+	    /*display: block;*/
+    	/*margin-top: 30px;*/
+	}
+
+	.resume-list{
+/*	    padding: 0;
+	    margin-left: 5px;*/
+	    /*border-left: 1px solid #6091ff;*/
+		 margin-bottom:100px;
+	}
+
+
+	.resume-item{
+	    margin-left: -7px;
+	    list-style: none;
+	    display: flex;
+	    align-items: flex-end;
+   	    border-bottom: 2px solid #000 !important;
+   	    margin: 0 !important;
+	}
+
+	.resume-item.active + .resume-item > .fa-dot-circle-o, 	.resume-item.active + .resume-item > .fa-graduation-cap{
+			transform: translate(0px, -20px);	
+			font-size: 1.5em;
+	}
+
+	.resume-item .fa-dot-circle-o, 	.resume-item .fa-graduation-cap{
+		transform: translate(0px, 20px);
+		transition: .6s;
+	}
+
+
+	.resume-item .fa-dot-circle-o:after, .resume-item .fa-graduation-cap:after{
+		background: #000;
+	    content: '';
+	    height: 100vh;
+	    left: 50%;
+	    position: absolute;
+	    top: 100%;
+	    width: 1px;
+
+	}
+
+	.resume-item p{
+		line-height: 1.2em;
+		margin-left: 10px;
+	}
+
+	.resume-item .fa-dot-circle-o{
+	    color: #000;
+	}
+
+	.resume-item .fa-graduation-cap{
+	    color: limegreen;
+	}
+
+	.resume-position{
+	    color: black;
+	    /*margin-left: 10px;*/
+	}
+
+	.resume-duration{
+	    /*margin-left: 25px;*/
+	    color: #607d8b;
+	}
+
+	.correct-lg{
+		display: none;
+		border:none !important;
+	}
+
+	sentcase{
+		text-transform: capitalize;
+	}
+
+
+	@media only screen and (min-width: 767px){
+		.head-cont{		
+			max-width: 500px;
+		    /*background: black;*/
+	    	/*border-left: 2px solid white;*/
+	    	right: unset;
+	    	margin-left: 40%;
+	    	padding-top: 20vh; 
+		}
+
+		.head-cont *{
+			/*color: white;		*/
+			/*text-align: left;*/
+			/*font-weight: 200;*/
+		}
+
+		.hide-otherwise{
+			display: block;
+		}
+
+		.show-otherwise{
+			display: none;
+		}
+
+		.correct-lg{
+			display: flex;
+		}
+
+	}
+
+
+.tm-home-subtitle {
+    color: white;
+}	
+
+.progress-bar1 {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #2196f3;
+    -webkit-box-shadow: inset 0 -1px 0 rgb(0 0 0 / 15%);
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 15%);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
+
+    ul.content-slider, ul.content-slider > li{
+    width:100% !important;
+    }
+
+    #content-slider li{
+    overflow: hidden;
+    position: relative;
+    height: 210px;
+    max-width: 80%;
+    /*right: -1%;*/
+    padding: 20px;
+    transition: 2s
+    }
+  
+    .lSPager{
+    	display: none;
+    }
+
+
+    .portfolio-thumb .btn{
+    	border: 1px solid;
+    	color: white;
+    	margin:2px;
+    }
+
+    .portfolio-thumb .btn:hover {
+    	background-color: white;
+    	color: #506ee8;
+    }
+
+    .portfolio-thumb .btn.play{
+    	border-radius: 50%;
+	    padding: 4px;
+    }
+
+    .portfolio-thumb .btn.play .fa-play, .portfolio-thumb .btn.play .fa-pause {
+	    color: white;
+	    border: none;
+	    font-size: 18px;
+	    margin: 0;
+	    margin-left: 2px;
+    }
+
+    .portfolio-thumb .btn.play:hover {
+    	background-color: white;
+    }
+
+    .portfolio-thumb .btn.play:hover .fa-play{
+    	color: #506ee8;
+    }
+
+    .video-animation{
+    	transition: 3s;
+    	background-position: center;
+    	background-size: cover;
+    }
+
+    .video-animation p{    
+    	text-align: center;
+	    position: absolute;
+	    width: 100%;
+	    margin-top: -43%;
+	    opacity: .7;
+	}
+
+	.video-animation .btn.play{
+	    background-color: rgb(0 0 0 / 49%);
+	}
+
+    .portfolio-thumb video{
+	    border-radius: 0px;
+	    width: auto;
+	    display: block;
+	    background-size: cover;
+	    background-position: center;
+	    height: 100%;
+	    position: absolute;
+	    transform: translate(-50%, 0%);
+    	left: 50%;
+	}
+
+	.head-cont {
+		top:0;
+	}
+
+	/*added aninmation*/
+
+.sprout-grow {
+  animation: grow-sprout 1s;
+  animation-fill-mode: forwards;
+}
+
+.nh{
+	/*display: none;*/
+}
+
+
+  .dragme{
+			position:relative;
+			width: 270px;
+			height: 203px;
+			cursor: move;
+		}
+	#draggable {
+			background-color: #ccc;
+			border: 1px solid #000;
+		}
+
+
+@keyframes grow-sprout {
+  0% {
+    height: 0em;
+    margin-left: -0.39em;
+    margin-top: 0.6em;
+    /*width: 106.863px;*/
+  }
+
+  100% {
+    height: 1.3em;
+    margin-left: -1.1em;
+    margin-top: -0.6em;
+    /*width: 106.863px;*/
+  }
+}
+
+
+.slideshow > nav span.current {
+    background-color: #636363;
+}
+
+.slideshow > nav span{
+	border-top: 10px solid #ddd;
+    border-bottom: 10px solid #ddd;
+    background-color: #9e9e9e;
+}
+
+@media screen and (max-width: 65.3125em){
+	.tiltview {
+	    left: 0;
+	    opacity: 0.75;
+	    pointer-events: none;
+	}
+}
+smally {
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 4px;
+    min-width: 214px;
+    font-style: italic;
+}
+
+
+.tm-home-title, .tm-home-subtitle{
+	color: black;
+}
+
+#sample{
+	display: flex;
+}
+
+#sample > img{
+    height: 100px;
+    margin: 4px;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+.fa-star, .fa-star-half-o, .fa-star-half{
+	color:gold;
+}
+
+</style>
+
+
+
+</head>
+  <script type="text/javascript">
+    Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+        get: function(){
+            return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+        }
+    })
+  </script>
+
+<body data-spy="scroll" data-target="#rock-navigation" style="
+background: rgb(255 255 255);
+/*background: rgb(46 45 50);
+background: -moz-linear-gradient(304deg, #5A595C 0, #18171C 100%);
+background: -webkit-gradient(linear, 304deg, color-stop(0, 5A595C), color-stop(100%, 18171C));
+background: -webkit-linear-gradient(304deg, #5A595C 0, #18171C 100%);
+background: -o-linear-gradient(304deg, #5A595C 0, #18171C 100%);
+background: -ms-linear-gradient(304deg, #5A595C 0, #18171C 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1301FE', endColorstr='#F4F60C', GradientType='1'); 
+background: linear-gradient(304deg, #5A595C 0, #18171C 100%);  */
+">
+	<!-- START NAVIGATION -->
+	<div class="navbar navbar-default bs-dos-nav navbar-fixed-top sticky-navigation" role="navigation">
+		<div class="container">
+
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target="#rock-navigation">
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar" style="background: #30e3a1;"></span>
+					<span class="icon icon-bar" style="background: #cf5ff7;"></span>
+				</button>
+				<a href="#" class="navbar-brand">Eni</a>
+			</div>
+			<nav class="collapse navbar-collapse" id="rock-navigation">
+				<ul class="nav navbar-nav navbar-right main-navigation text-uppercase">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html">Portfolio</a></li>
+					<li><a href="index.html">Resume</a></li>
+					<li><a href="index.html">Soft Skills</a></li>
+					<li><a href="index.html">About</a></li>
+					<li><a href="index.html">Contact</a></li>
+				</ul>
+			</nav>
+
+		</div>
+	</div>
+	<!-- END NAVIGATION -->
+
+	<!-- START HOME -->
+	<section id="home" class="m-home wow fadeInLeft prevent-text-select" style="visibility: visible;animation-name: fadeInLeft;height: 30vh;background: url('img/starlybooks.jpg');background-position: bottom; background-size: cover;">
+
+	</section>
+	<!-- END HOME -->
+
+
+
+
+
+
+<section id="about" class="tm-padding-top-bottom-100" style=" padding: 0; background-color: #f7fae1; ">
+ 
+		<div class="container">
+			<div class="row">
+
+					<div class="col-md-12">
+						<h1 class="animated fadeInLeft" style="animation-delay: 1s;margin-top: -19px;color: black;text-shadow: 0 0 4px white;">
+							<span style="font-family: century_bold; display: inline-block;"><img src="img/starlybooks.png" style=" height: 1.7em;"> StarlyBooks</span>
+						</h1>
+						<h2 class="animated fadeInLeft" style="animation-delay: .8s;"> 
+							<span class="  animated fadeInDown" style="animation-delay: 1.4s; display: inline-block; padding-top: 30px; padding-left: 35px; font-weight: bold;">Documentation.</span> 
+						</h2>
+						<br><br>					
+					</div>
+			</div>
+		</div>
+	</section>
+
+
+
+<section id="about" class="tm-padding-top-bottom-100" style="padding: 0;background-color: #f7fae1;">
+ 
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-6 col-sm-6" style=" padding: 80px 15px; background-color: #94ffd0;">
+					<div class="">						
+						<h4 class="tm-red-text"><strong style="  text-transform: none; color:black; ">Product Overview:</strong></h4>
+					</div>
+						<p style="text-align: justify;">
+							StarlyBooks is an innovative and modern online book website that is designed to cater to the needs of book enthusiasts worldwide. Our primary goal is to offer an easy-to-use platform that provides a seamless and enjoyable experience for users to explore and discover their favorite books. Our website is equipped with advanced search features that enable users to search for books based on author, genre, or title, making it simple for users to find what they're looking for quickly. In addition, StarlyBooks is designed to be user-friendly, with a visually appealing interface that is both intuitive and easy to navigate. We have invested significant time and resources in creating a website that meets the needs and expectations of our users, and we are committed to continuously improving our platform to ensure that our users always have the best possible experience.<br>
+						</p>
+					
+					
+
+
+				</div>
+
+				
+				<div class="col-md-6 col-sm-6" style=" background: #c4c4ff; padding: 80px 15px;">
+					<div class="">
+						
+						<h4 class="tm-red-text"><strong style="  text-transform: none; color:black; ">Goal</strong></h4>
+					</div>
+						<p style="text-align: justify;">
+						 The ultimate aim of this project is to develop a website that strikes the perfect balance between aesthetics and functionality. We want to create a visually stunning platform that appeals to book lovers and also provides an easy-to-use interface for browsing and purchasing books. To achieve this, we will be incorporating a range of features that enable users to effortlessly search for their favorite books based on author, genre, title, and other relevant criteria. The website will also have an intuitive navigation system that ensures users can easily find what they're looking for.<br><br>Overall, the goal is to create an online book platform that meets the needs of both casual readers and avid book enthusiasts, offering them a seamless and enjoyable experience from start to finish..
+						</p>
+					
+					
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+<section id="about" class="tm-padding-top-bottom-100" style="padding: 0;background-color: #f7fae1;">
+ 
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-6 col-sm-6" style=" padding: 80px 15px; background-color: #ffdc94;">
+					<div class="">						
+						<h3 class="tm-red-text"><strong style="  text-transform: none; color:black; text-decoration: underline; ">Research and Gather Information:</strong></h3>
+					</div>
+						<p style="text-align: justify;">
+							We conducted user research to understand the needs and preferences of book lovers, analyzed competitors' websites to identify areas for differentiation, and studied industry trends to stay up-to-date with the latest innovations in book sales and marketing.<br>
+						</p>
+						<br>
+						<br>
+						<h4 class="tm-red-text"><strong style="  text-transform: none; color:black; ">Competitor Analysis:</strong></h4>
+						<p style="text-align: justify;">
+							Wattpad is a popular online platform for writers and readers to publish, read, and discover stories in various genres, including romance, science fiction, fantasy, and fanfiction. As a competitor to our online book website, I have conducted a comparative analysis to determine the strengths and weaknesses of both platforms.<br>
+						</p>
+
+
+				</div>
+
+				
+				<div class="col-md-6 col-sm-6" style="background: #ffc4c4;padding: 81px 15px;text-align: center;">
+					<div class="">
+						<img src="img/sb2.jpg" style=" width: 66%; margin: 1%; ">
+						<img src="img/sb1.jpg" style=" width: 66%; margin: 1%; ">
+					</div>					
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+<section id="about" class="tm-padding-top-bottom-100" style="padding: 0;background-color: #f7fae1; text-align: justify;">
+ 
+		<div class="container">
+			<div class="row">
+
+				
+				<div class="col-md-12 col-sm-12" style=" background: #46d2dd; padding: 76px 15px;">
+					<div class=""> 
+						<h4 class="tm-red-text"><strong style="  text-transform: none; color:black; ">Strengths of Wattpad</strong></h4>
+					</div>
+						<ul>
+							<li style="margin-bottom: 0px;">Free access to stories: Wattpad is a free platform, with users able to read and share stories without paying any fees. This accessibility makes it an attractive option for readers who are looking for affordable or free entertainment options.</li>
+							<li style="margin-bottom: 0px;">Large community of readers and writers: Wattpad boasts a massive community of over 90 million users, including both writers and readers. This large user base makes it an attractive platform for both new and established writers to share their work and reach a wider audience.</li>
+							<li style="margin-bottom: 0px;">Wide selection of genres and stories: Wattpad offers a vast selection of stories in various genres, catering to a diverse range of reader interests. The platform's fanfiction section, in particular, is popular among young adult readers, with stories based on popular movies, TV shows, and books.</li>
+						</ul> 
+					<br>		
+					<div class=""> 					
+						<h4 class="tm-red-text"><strong style="text-transform: none; color:black;">Weaknesses of Wattpad</strong></h4>
+					</div> 
+						<ul>
+							<li style="margin-bottom: 0px;">Limited monetization options for writers: Wattpad's revenue-sharing program only offers payments to writers who generate significant engagement and views on their stories, meaning that many writers may not be able to monetize their work effectively.</li>
+							<li style="margin-bottom: 0px;">Overwhelming selection of stories: Wattpad's vast selection of stories can also be overwhelming for users, with many stories to sort through and potentially miss out on hidden gems.</li>
+						</ul>
+					
+				</div>
+
+
+				<div class="col-md-12 col-sm-12" style=" padding: 80px 15px; background-color:#a2fc7e;">
+					<div class="">	
+						<br>					
+						<h4 class="tm-red-text"><strong style="text-transform: none; color:black;">Analysis</strong></h4>
+					</div>
+						<p style="text-align: justify;">
+							Our online book website can learn from Wattpad's strengths, such as their large community of readers and writers, and the wide selection of genres and stories. However, we can also address some of Wattpad's weaknesses, such as providing better quality control measures and offering more flexible monetization options for writers.
+							<br><br>
+							In contrast to Wattpad, our online book website can also offer a more curated selection of high-quality books, along with additional features like the percentage count for when a user reads a book and the payment flow feature from when the percentage count gets to 10%. These features can incentivize users to purchase and read books, while also providing a more engaging reading experience.
+							<br><br>
+							Overall, by incorporating the strengths of Wattpad while addressing some of its weaknesses and offering unique features, our online book website can provide a competitive alternative for readers and writers looking for a high-quality and engaging online reading experience.
+						</p>
+ 					<br><br>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	
+<section id="about" class="tm-padding-top-bottom-100" style="padding: 0;background-color: #f7fae1; text-align: justify;">
+ 
+		<div class="container">
+			<div class="row">
+
+				
+				<div class="col-md-12 col-sm-12" style=" background: #f8f916; padding: 40px 15px;"> 
+					<div class=""> 
+						<h3 class="tm-red-text"><strong style="  text-transform: none; color:black; text-decoration: underline; ">Creating User Personas</strong></h3>
+					</div>
+						<p style="text-align: justify;">
+							To create a user-centered design for StarlyBooks, we conducted thorough research to understand the needs and preferences of different types of book lovers. Based on this research, we developed user personas that represented various segments of the target audience, such as Book readers, Authors, and Crypto Enthusiasts.
+							<br>
+							These personas were detailed representations of our potential users, including their goals, interests, pain points, and behaviors. By developing these personas, we gained valuable insights into our users' needs, preferences, and motivations. We were able to use this information to inform the design of the website, ensuring that it was tailored to meet the specific needs of our target audience.
+							<br>
+							For example, we learned that Book readers tend to prefer a simple, easy-to-use interface that allows them to quickly find and purchase books, while Authors value platforms that enable them to showcase their work and connect with readers. On the other hand, Crypto Enthusiasts may have unique requirements for payment and security features.
+							<br>
+							By using these personas to guide the design process, we were able to create a website that was optimized for the needs of our target audience. We were confident that our design choices were informed by the needs of real users, leading to a more effective and user-friendly website overall.
+						</p> 
+				</div>
+
+
+				<div class="col-md-12 col-sm-12" style="padding: 30px 0px;background-color: black; /*#fc8b62*/color: black;">
+					<br>
+						<div class="row" style="text-align: center;margin: 0;">							
+							<p class="col-md-6" style="font-size: 14px;"> <img src="img/sba1.jpg" style=" width: 100%; margin: 1%; "> User Persona (Crypto Enthusiasts) </p>
+							
+							<p class="col-md-6" style="font-size: 14px;"><img src="img/sba2.jpg" style=" width: 100%; margin: 1%; "> User Persona (Book Lover) </p>							
+						</div>
+					<br>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	
+<section id="about" class="tm-padding-top-bottom-100" style="padding: 0;background-color: #f7fae1; text-align: justify;">
+ 
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-12 col-sm-12" style="padding: 30px 15px;background-color: #fc8b62;color: black;">
+					<div class="">	
+						<br>					
+						<h4 class="tm-red-text"><strong style="text-transform: none; color:black;">Features</strong></h4>
+					</div>
+						<ul>
+							<li style="margin-bottom: 0px;">Upload PDF: This feature allows authors or publishers to upload a PDF version of their books onto the website, which users can purchase and read on the website. This feature adds to the website's selection of books and provides an alternative format for users who prefer reading on their devices.</li>
+							<li style="margin-bottom: 0px;">Like feature: This feature allows users to indicate that they enjoyed a book by clicking a "like" button. This feature can help other users find books that are popular or highly-rated, as well as providing valuable feedback to authors and publishers on which books are resonating with their audience.</li>
+							<li style="margin-bottom: 0px;">Comment feature: This feature allows users to leave comments or reviews on books they have read, providing valuable feedback to other users who may be considering purchasing the same book. Comments and reviews can also help authors and publishers to improve their work and tailor their content to better meet the needs and preferences of their audience.</li>
+							<li style="margin-bottom: 0px;">Percentage count for when a user reads a book: This feature tracks the user's progress as they read a book, indicating what percentage of the book they have completed. This feature provides users with a sense of accomplishment as they progress through the book and helps them to track their reading goals.</li>
+							<li style="margin-bottom: 0px;">Payment flow feature from when the percentage count gets to 10%: This feature allows users to pay for the book they are reading once they have completed 10% of the book. This feature provides a flexible payment option for users who may not want to pay for the entire book upfront, while also incentivizing users to continue reading the book.</li>
+						</ul> 
+						<p>Overall, these features add to the functionality and usability of the online book website, providing users with more ways to engage with books and connect with other readers. By incorporating these features, the website can provide a more comprehensive and satisfying experience for book lovers.</p> 
+						<br><br>
+				</div>
+
+
+				
+				<div class="col-md-6 col-sm-6" style=" background: #f8f916; padding: 30px 15px;">
+					<div class=""> 
+						<h3 class="tm-red-text"><strong style="  text-transform: none; color:black; text-decoration: underline; ">Creating User Personas</strong></h3>
+					</div>
+						<p style="text-align: justify;">
+							Based on our research, we created user personas for different types of book lovers, such as Book readers , Authors, Crypto Enthusiasts. These personas helped us to understand the user's motivations, pain points, and behavior, and to tailor the design of the website to meet their needs.
+						</p>
+						<div style="text-align: center;">
+							<img src="img/sba1.jpg" style=" width: 66%; margin: 1%; ">
+							<p style="font-size: 14px;"> User Persona (Crypto Enthusiasts) </p>
+							<img src="img/sba2.jpg" style=" width: 66%; margin: 1%; ">
+							<p style="font-size: 14px;"> User Persona (Book Lover) </p>							
+						</div>
+				</div>
+
+
+
+				
+				<div class="col-md-6 col-sm-6" style=" background: #f8f916; padding: 30px 15px;">
+					<div class=""> 
+						<h3 class="tm-red-text"><strong style="  text-transform: none; color:black; text-decoration: underline; ">Creating User Personas</strong></h3>
+					</div>
+						<p style="text-align: justify;">
+							Based on our research, we created user personas for different types of book lovers, such as Book readers , Authors, Crypto Enthusiasts. These personas helped us to understand the user's motivations, pain points, and behavior, and to tailor the design of the website to meet their needs.
+						</p>
+						<div style="text-align: center;">
+							<img src="img/sba1.jpg" style=" width: 66%; margin: 1%; ">
+							<p style="font-size: 14px;"> User Persona (Crypto Enthusiasts) </p>
+							<img src="img/sba2.jpg" style=" width: 66%; margin: 1%; ">
+							<p style="font-size: 14px;"> User Persona (Book Lover) </p>							
+						</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+ 
+	<!-- END CONTACT -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/jquery.nav.js"></script>
+	<script src="js/isotope.js"></script>
+	<script src="js/imagesloaded.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/lightslider.min.js" ></script>
+
+		<script src="js/classie.js"></script>
+		<script src="js/tiltSlider.js"></script>
+
+
+<script type="text/javascript">
+
+
+
+$(document).ready(function(){
+
+	var url_string = window.location.href; 
+var url = new URL(url_string);
+var focus = url.searchParams.get("focus");
+
+$('#'+focus+'').trigger('click');
+
+    y="1%";
+    x=parseInt($( document ).width() / 500);
+
+    if (x<1)x=1;
+    if(x<3){
+        y='-0.5%';
+        w=-5;
+        $("#content-slider li").css("right",y);
+    }else{
+        z=($( document ).width()*0.5)-300;
+        // y="-"+z+"px";
+        y="150px";
+        w=10;
+    	$("#content-slider li").css("right",y);
+    }
+    x=x+.2;
+    if(x > 4) x=4;
+    if(x > 5) x=5;
+
+
+    $("#content-slider").lightSlider({
+      loop:false,
+      keyPress:true,
+      item:x,
+      pause: 6000,
+      speed:2000,
+      auto:false,
+      pauseOnHover: true,
+      gallery: false,
+      currentPagerPosition: 'left',
+      thumbItem:9,
+      slideMargin:w,
+
+
+    });
+    new TiltSlider( document.getElementById( 'slideshow' ) );  
+
+    window.setInterval(function(){  
+    	// autoplay:true,          
+
+        if($('nav > .current').next().index() === '-1'){
+            $('nav > .span').eq(0).trigger('click');
+        }else{
+          $('nav>.current').next().trigger('click');
+          }               
+    } , 10000);
+
+})
+
+
+
+
+videoimg=1;
+
+setInterval(function(){
+	videoimg+=1;
+	videoimg=(videoimg>7)?1:videoimg;
+
+	$( '.video-animation' ).each(function( index ) {
+			$(this).css('background-image', "url(" + $(this).attr('base-img')+videoimg+$(this).attr('base-img-ext') +")");
+	})
+
+},4000)
+
+
+
+$(".play").click(function(){
+	
+	if( $(this).closest('.portfolio-thumb').find('video')[0].playing ){
+		
+		$(this).closest('.portfolio-thumb').find('video')[0].pause();
+		$(this).closest('.portfolio-thumb').find('video').css('background-color','transparent').addClass('hide');
+		$(this).closest('.portfolio-thumb').find('.portfolio-overlay').removeClass('hide');
+		$(this).closest('.portfolio-thumb').find('.pause').addClass('fa-play').removeClass('fa-pause');
+
+	}else{
+
+		$(this).closest('.portfolio-thumb').find('video')[0].play();
+		$(this).closest('.portfolio-thumb').find('video').css('background-color','black').removeClass('hide');
+		$(this).closest('.portfolio-thumb').find('.portfolio-overlay').addClass('hide');
+		$(this).closest('.portfolio-thumb').find('.pause').addClass('fa-pause').removeClass('fa-play');
+
+	}
+
+})
+
+
+
+
+
+
+// function startDrag(e) {
+// 				// determine event object
+// 				if (!e) {
+// 					var e = window.event;
+// 				}
+
+// 				// IE uses srcElement, others use target
+// 				var targ = e.target ? e.target : e.srcElement;
+
+// 				if (targ.className != 'dragme') {return};
+// 				// calculate event X, Y coordinates
+// 					offsetX = e.clientX;
+// 					offsetY = e.clientY;
+
+// 				// assign default values for top and left properties
+// 				if(!targ.style.left) { targ.style.left='0px'};
+// 				if (!targ.style.top) { targ.style.top='0px'};
+
+// 				// calculate integer values for top and left 
+// 				// properties
+// 				coordX = parseInt(targ.style.left);
+// 				coordY = parseInt(targ.style.top);
+// 				drag = true;
+
+// 				// move div element
+// 					document.onmousemove=dragDiv;
+				
+// 			}
+// 			function dragDiv(e) {
+// 				if (!drag) {return};
+// 				if (!e) { var e= window.event};
+// 				var targ=e.target?e.target:e.srcElement;
+// 				// move div element
+// 				targ.style.left=coordX+e.clientX-offsetX+'px';
+// 				targ.style.top=coordY+e.clientY-offsetY+'px';
+// 				return false;
+// 			}
+// 			function stopDrag() {
+// 				drag=false;
+// 			}
+// 			window.onload = function() {
+// 				document.onmousedown = startDrag;
+// 				document.onmouseup = stopDrag;
+// 				document.ontouchstart = startDrag;
+// 				document.ontouchend = stopDrag;
+// 			}
+
+</script>
+<!-- 					<div id="draggable" class="dragme" style="height: 100px; width: 100px; position: absolute;">
+						
+					</div> -->
+
+					
+</body>
+</html>
